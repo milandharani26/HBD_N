@@ -1,23 +1,28 @@
 // trigger to play music in the background with sweetalert
+
 window.addEventListener("load", () => {
-  Swal.fire({
-      title: 'Do you want to play music in the background?',
-      icon: 'warning',
-      showCancelButton: true,
-      confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
-      confirmButtonText: 'Yes',
-      cancelButtonText: 'No',
-  }).then((result) => {
-      if (result.isConfirmed) {
-          document.querySelector('.song').play();
-          animationTimeline();
-      } else {
-          animationTimeline();
-      }
+    Swal.fire({
+        title: 'Do you want to play music?',
+        imageUrl: 'https://png.pngtree.com/png-clipart/20240109/original/pngtree-smile-icon-smile-logo-vector-design-happy-emoticon-business-funny-design-png-image_14066997.png', // Path to your custom icon
+        // imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvNT6DkIuxar8kRC2FakgHxaUePXMx90SvndUpxwuz_q4wgewSZhQvWFeaXYvPgbpJB7o&usqp=CAU',
+        imageWidth: 100, // Adjust the width of the image
+        imageHeight: 100, // Adjust the height of the image
+        imageAlt: 'Custom icon', // Alternative text for the image
+        showCancelButton: true,
+        confirmButtonColor: '#003D5B', // #2E294E #28587B
+        cancelButtonColor: '#F46036',
+        confirmButtonText: 'Yes',
+        cancelButtonText: 'No',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            document.querySelector('.song').play();
+            animationTimeline();
+        } else {
+            animationTimeline();
+        }
+    });
   });
-//   document.querySelector(".song").play();
-});
+  
 
 // animation timeline
 const animationTimeline = () => {
