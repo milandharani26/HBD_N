@@ -82,6 +82,7 @@ body {
 .text-box .fake-btn {
   background-color: rgb(21, 161, 237);
   border-radius: 12px;
+  margin-top: 10px;
   bottom: -50px;
   color: #fff;
   padding: .5rem 1rem;
@@ -170,7 +171,8 @@ body {
 }
 
 .eight svg:nth-child(1) {
-  fill: #bd6ecf;
+  /* fill: #bd6ecf; */
+  fill: #ee2b05;
   left: 5vw;
   top: 7vh;
 }
